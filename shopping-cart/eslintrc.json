@@ -1,0 +1,75 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "plugins": ["simple-import-sort", "@typescript-eslint", "unused-imports"],
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "globals": {
+      "document": true,
+      "window": true,
+      "_Ltracker": true,
+      "process": true,
+      "fetch": true,
+      "alert": true,
+      "localStorage": true,
+      "Headers": true,
+      "FormData": true,
+      "Blob": true,
+      "jest": true,
+      "test": true,
+      "FileReader": true
+    },
+    "rules": {
+      "import/extensions": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/no-unresolved": 0,
+      "react/jsx-filename-extension": 0,
+      "react/destructuring-assignment": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "linebreak-style": 0,
+      "no-mixed-operators": 0,
+
+      "react/jsx-props-no-spreading": 0,
+      "react/prop-types": 0,
+      "simple-import-sort/sort": "error",
+
+      "no-unused-vars": "off",
+      "react/jsx-key": 0,
+      "react/react-in-jsx-scope": 0,
+      "react/no-unescaped-entities": 0,
+      "react/jsx-no-target-blank": 0,
+      "react/display-name": 0,
+      "unused-imports/no-unused-imports": "error",
+      "unused-imports/no-unused-vars": [
+        "warn",
+        { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+      ],
+      "@typescript-eslint/no-unused-vars": ["off"],
+      "@typescript-eslint/explicit-module-boundary": ["off"],
+      "@typescript-eslint/no-explicit-any": ["off"],
+      "@typescript-eslint/explicit-module-boundary-types": ["off"],
+      "@typescript-eslint/ban-ts-comment": ["off"],
+      "@typescript-eslint/no-this-alias": ["off"],
+      "@typescript-eslint/ban-types": ["off"],
+      "@typescript-eslint/no-empty-function": ["off"],
+      "@typescript-eslint/no-var-requires": ["off"],
+      "@typescript-eslint/no-empty-interface": ["off"]
+    }
+  }
+  

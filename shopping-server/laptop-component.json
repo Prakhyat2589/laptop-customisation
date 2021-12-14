@@ -1,0 +1,82 @@
+[
+  {
+    "component_title": "Screen",
+    "component_list": [
+      {
+        "component_name": "13 Retina",
+        "component_price": 400,
+        "quantity": 1
+      },
+      {
+        "component_name": "15 Retina",
+        "component_price": 700,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "component_title": "CPU",
+    "component_list": [
+      {
+        "component_name": "2.7GHz quad-core Intel Core i7 processor, Turbo Boost up to 3.6GH",
+        "component_price": 300,
+        "quantity": 1
+      },
+      {
+        "component_name": "2.9GHz quad-core Intel Core i7 processor, Turbo Boost up to 3.8GHz",
+        "component_price": 500,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "component_title": "Storage",
+    "component_list": [
+      {
+        "component_name": "512GB PCIe-based SSD",
+        "component_price": 100,
+        "quantity": 1
+      },
+      {
+        "component_name": "1TB PCIe-based SSD",
+        "component_price": 200,
+        "quantity": 1
+      },
+      {
+        "component_name": "2TB PCIe-based SSD",
+        "component_price": 250,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "component_title": "Memory",
+    "component_list": [
+      {
+        "component_name": "8 GB 2133MHz memory",
+        "component_price": 100,
+        "quantity": 1
+      },
+      {
+        "component_name": "16 GB 2133MHz memory",
+        "component_price": 150,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "component_title": "Graphics",
+    "component_list": [
+      {
+        "component_name": "Radeon Pro 455 with 2GB memory",
+        "component_price": 300,
+        "quantity": 1
+      },
+      {
+        "component_name": "Radeon Pro 460 with 4GB memory",
+        "component_price": 400,
+        "quantity": 1
+      }
+    ]
+  }
+]
