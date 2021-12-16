@@ -31,10 +31,10 @@ When App is started User is able to see the laptop customisation list. When the 
 
 The main goal this task is to access the code quality, software engineering and testing.
 
-If there is no result from api or api is down, `No result found` message will be displayed.
+If there is no result from api or api is down, `No records found. Please try again later` message will be displayed.
 This is done in order to handle the non-happy path for the application
 
 ## Stack
 
 - Languages: HTML5, CSS3, JavaScript (ES6), TypeScript
-- Libraries: ReactJS, Express.js
+- Libraries: ReactJS, Express.js, Jest
