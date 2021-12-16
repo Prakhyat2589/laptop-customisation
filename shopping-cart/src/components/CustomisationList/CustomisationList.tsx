@@ -1,16 +1,24 @@
-import { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import styles from "./CustomisationList.module.css";
 import { Tools } from "../../types";
 import Items from "../Items/Items";
 import CartCheckout from "../CartCheckout/CartCheckout";
-import { useFetchData } from "../../services/DataServices";
+import fetchData from "../../services/DataServices";
 
-const CustomisationList = () => {
-  const { data } = useFetchData<Tools[]>("/list");
-
-  const toolsList = useMemo(() => data || [], [data]);
-
+const CustomisationList: React.FC = () => {
+  const [dataList, setDataList] = useState<Tools[]>([]);
   const [cartItems, setCartItems] = useState<any[]>([]);
+
+  const getData = async () => {
+    const res = await fetchData("/list");
+    setDataList(res);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const toolsList = useMemo(() => dataList || [], [dataList]);
 
   const selectedItemPrice = (itemSelected: any) => {
     setCartItems((currentCart) => [...currentCart, itemSelected]);

@@ -1,17 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from "./App";
 
-Object.defineProperty(window, 'matchMedia', {
-  value: () => {
-    return {
-      matches: false,
-      addListener: () => {},
-      removeListener: () => {}
-    };
-  }
-});
-
-test('renders submit', () => {
-  render(<App />);
-  expect(screen.getByText(/Submit/i)).toBeInTheDocument();
+test("renders App Component", () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Laptop Customisation Tool/i);
+  expect(linkElement).toBeInTheDocument();
 });
