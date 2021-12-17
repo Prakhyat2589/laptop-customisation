@@ -20,6 +20,7 @@ const CustomisationList: React.FC = () => {
 
   const toolsList = useMemo(() => dataList || [], [dataList]);
 
+  /* istanbul ignore next */
   const selectedItemPrice = (itemSelected: any) => {
     setCartItems((currentCart) => [...currentCart, itemSelected]);
   };
@@ -31,7 +32,7 @@ const CustomisationList: React.FC = () => {
           <h2>Customisation Choices</h2>
           {toolsList.map((tools, idx) => {
             return (
-              <div key={idx}>
+              <div key={idx} data-testid="customisationlist">
                 <Items tools={tools} selectedItemPrice={selectedItemPrice} />
               </div>
             );

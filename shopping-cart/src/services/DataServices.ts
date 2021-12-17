@@ -5,8 +5,8 @@ const fetchData = async (url: string) => {
     const respJson = await res.data;
     return respJson;
   } catch (e) {
-    console.log("Error:", e);
-    return null;
+    console.log(e);
+    return [];
   }
 };
 

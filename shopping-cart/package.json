@@ -52,6 +52,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/index.js",
+      "!<rootDir>/src/index.tsx",
+      "!<rootDir>/src/types.ts",
+      "!<rootDir>/src/react-app-env.d.ts",
       "!<rootDir>/src/reportWebVitals.js",
       "!<rootDir>/node_modules/"
     ],
